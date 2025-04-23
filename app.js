@@ -4,6 +4,22 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
+app.get("join.htm", (req, res) => 
+{
+    const filePath = path.join(__dirname, 'files', 'join.htm');
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            console.error('Error sending file:', err);
+        }
+    });
+});
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+});
+
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
