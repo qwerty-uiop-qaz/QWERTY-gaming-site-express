@@ -801,10 +801,11 @@ const join = `<!DOCTYPE html>
   </head>
   <body>
     <h1>Join QWERTY gaming</h1>
-    <form>
+    <form method="post">
       <input type="hidden" name="formtype" value="join">
       <input type="email" name="email" placeholder="Your email adress">
-      <input type="submit" content="Join now">
+      <input type="password" name="password" placeholder="Your new password">
+      <input type="submit" content="Join now" >
     </form>
   </body>
 </html>`
