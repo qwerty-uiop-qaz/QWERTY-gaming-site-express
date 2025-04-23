@@ -4,11 +4,7 @@ const port = process.env.PORT || 3001;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
-app.get("/join.htm", (req, res) => 
-{
-    const filePath = path.join(__dirname, 'files', 'join.htm');
-    res.type('html').send(join);
-});
+app.get("/join.htm", (req, res) => res.type('html').send(join));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
