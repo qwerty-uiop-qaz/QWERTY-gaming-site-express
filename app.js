@@ -6,6 +6,8 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.get("/join.htm", (req, res) => res.type('html').send(join));
 
+app.post("join-submit", (req, res) => console.log(req.body);
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
@@ -801,7 +803,7 @@ const join = `<!DOCTYPE html>
   </head>
   <body>
     <h1>Join QWERTY gaming</h1>
-    <form method="post">
+    <form method="post" action="/join-submit">
       <input type="hidden" name="formtype" value="join">
       <input type="email" name="email" placeholder="Your email adress">
       <input type="password" name="password" placeholder="Your new password">
