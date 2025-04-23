@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1{
+        alignment: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Join QWERTY gaming</h1>
+    <form>
+      <input type="hidden" name="formtype" value="join">
+      <input type="email" name="email" placeholder="Your email adress">
+      <input type="submit" content="Join now">
+    </form>
+  </body>
+</html>
