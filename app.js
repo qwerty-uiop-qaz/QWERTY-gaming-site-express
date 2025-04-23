@@ -7,11 +7,7 @@ app.get("/", (req, res) => res.type('html').send(html));
 app.get("join.htm", (req, res) => 
 {
     const filePath = path.join(__dirname, 'files', 'join.htm');
-    res.sendFile(filePath, (err) => {
-        if (err) {
-            console.error('Error sending file:', err);
-        }
-    });
+    res.type('html').send(join)
 });
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
@@ -797,3 +793,5 @@ const html = `
 		},
 	};</script><!-- JavaScript Translations Object --> <!-- CSS Minimize Bottom --> <link rel="stylesheet" class="defer-css" data-href="https://cdn-cms-s.f-static.net/versions/2/css/minimize-bottom.css?v=g84024" type="text/css" crossorigin="anonymous"> <!-- Minimize JS files --> <script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_p1.js?v=g84024" crossorigin="anonymous"></script><script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_p2.js?v=g84024" crossorigin="anonymous"></script><script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_p3.js?v=g84024" crossorigin="anonymous"></script><script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_p4.js?v=g84024" crossorigin="anonymous"></script><script src="https://cdn-cms-s.f-static.net/versions/2/js/js.php?v=g84024&umk=3-5-167-169" crossorigin="anonymous"></script><script src="https://cdn-cms-s.f-static.net/versions/2/js/minimize_scripts.js?v=g84024" crossorigin="anonymous"></script> <input type="hidden" id="cz_uid" value=""> <!-- Website Statistics --> <script src="https://cdn-cms-s.f-static.net/versions/2/wizard/statistics/js/generateStats-min.js?v=g84024" crossorigin="anonymous"></script> <!-- Floating Magic Button Update Preview Helper --><div> <div class="magic-button-container"> <!-- Contact Magic Button Settings--> <input type="hidden" id="magicButtonSettings" value="{&quot;active&quot;:false,&quot;items&quot;:{&quot;contactUs&quot;:{&quot;order&quot;:0,&quot;value&quot;:&quot;shainon@site123-gal-editor-b.com&quot;,&quot;hasInput&quot;:true}},&quot;siteLogo&quot;:&quot;&quot;,&quot;siteName&quot;:&quot;qwerty gaming&quot;}"> <!-- Share Magic Button Settings --> <input type="hidden" id="shareMagicButtonSettings" value="{&quot;active&quot;:false,&quot;items&quot;:{&quot;faceBook&quot;:{&quot;order&quot;:1,&quot;value&quot;:&quot;&quot;}},&quot;siteLogo&quot;:&quot;&quot;,&quot;siteName&quot;:&quot;qwerty gaming&quot;}"> <!-- All Magic Buttons --> <div class="all-magic-buttons" data-is-managment="1"></div> </div></div><!-- Pjax Helper --><div class="s123-front-last-element hidden"></div><!-- product review page scripts --></body></html>
 `
+
+const join = ``
