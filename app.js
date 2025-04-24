@@ -6,7 +6,7 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.get("/join.htm", (req, res) => res.type('html').send(join));
 
-app.post("/join-submit", (req, res) => console.log(req.body).send(login));
+app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
