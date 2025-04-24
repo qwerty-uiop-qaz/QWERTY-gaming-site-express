@@ -8,7 +8,7 @@ app.get("/join.htm", (req, res) => res.type('html').send(join));
 
 app.get("/login.htm", (req, res) => res.type('html').send(login));
 
-app.get("/chat-home.htm", (req, res) => res.type('html').send(chat-home));
+app.get("/chat-home.htm", (req, res) => res.type('html').send(chathome));
 
 app.get("/chat/*.htm", (req, res) => res.type('html').send(chat));
 
@@ -859,7 +859,7 @@ const home = `<!DOCTYPE html>
   </body>
 </html>`
 
-const chat-home = `<!DOCTYPE html>
+const chathome = `<!DOCTYPE html>
 <html>
   <head>
     <style>
