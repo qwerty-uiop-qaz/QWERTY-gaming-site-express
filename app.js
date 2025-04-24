@@ -6,6 +6,10 @@ app.get("/", (req, res) => res.type('html').send(html));
 
 app.get("/join.htm", (req, res) => res.type('html').send(join));
 
+app.get("/login.htm", (req, res) => res.type('html').send(login));
+
+app.get("/chat-home.htm", (req, res) => res.type('html').send(chat-home));
+
 app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
 app.post("/login-submit", (req, res) => {console.log(req.body); res.type("html").send(home);});
@@ -831,5 +835,24 @@ const login = `<!DOCTYPE html>
       <input type="password" name="password" placeholder="Password">
       <input type="submit" content="Join now">
     </form>
+  </body>
+</html>`
+
+const home = `<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1{
+        alignment: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to QWERTY gaming</h1>
+		<a href="/chat-home.htm">
+      <div>
+		    Live chat
+	    </div>
+	  </a>
   </body>
 </html>`
