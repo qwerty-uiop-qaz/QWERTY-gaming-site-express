@@ -869,13 +869,15 @@ const chat-home = `<!DOCTYPE html>
     </style>
   </head>
   <body>
-    <h1>Welcome to QWERTY gaming</h1>
-		<a href="/chat-home.htm">
-      <div>
-		    Live chat
-	    </div>
-	  </a>
+    <h1>Live chat</h1>
+    <input type="text" id="chatname" placeholder="Chat name">
+    <button onclick="openchat()">
   </body>
+  <script>
+    openchat(){
+      window.location.href = "/chat/" + chatname.value + ".htm"
+    }
+  </script>
 </html>`
 
 const chat = `<!DOCTYPE html>
