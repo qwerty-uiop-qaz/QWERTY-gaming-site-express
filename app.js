@@ -811,3 +811,23 @@ const join = `<!DOCTYPE html>
     </form>
   </body>
 </html>`
+
+const login = `<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1{
+        alignment: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form method="post" action="/login-submit">
+      <input type="hidden" name="formtype" value="login">
+      <input type="email" name="email" placeholder="Email adress">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" content="Join now">
+    </form>
+  </body>
+</html>`
