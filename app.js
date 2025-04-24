@@ -8,6 +8,8 @@ app.get("/join.htm", (req, res) => res.type('html').send(join));
 
 app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
+app.post("/login-submit", (req, res) => {console.log(req.body); res.type("html").send(home);});
+
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
