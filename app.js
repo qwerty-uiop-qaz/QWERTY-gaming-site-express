@@ -10,6 +10,8 @@ app.get("/login.htm", (req, res) => res.type('html').send(login));
 
 app.get("/chat-home.htm", (req, res) => res.type('html').send(chat-home));
 
+app.get("/chat/*.htm", (req, res) => res.type('html').send(chat));
+
 app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
 app.post("/login-submit", (req, res) => {console.log(req.body); res.type("html").send(home);});
