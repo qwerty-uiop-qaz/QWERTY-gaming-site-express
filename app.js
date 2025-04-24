@@ -858,3 +858,41 @@ const home = `<!DOCTYPE html>
 	  </a>
   </body>
 </html>`
+
+const chat-home = `<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1{
+        alignment: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to QWERTY gaming</h1>
+		<a href="/chat-home.htm">
+      <div>
+		    Live chat
+	    </div>
+	  </a>
+  </body>
+</html>`
+
+const chat = `<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1{
+        alignment: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to QWERTY gaming</h1>
+		<a href="/chat-home.htm">
+      <div>
+		    Live chat
+	    </div>
+	  </a>
+  </body>
+</html>`
