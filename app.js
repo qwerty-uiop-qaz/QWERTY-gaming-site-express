@@ -871,7 +871,7 @@ const chathome = `<!DOCTYPE html>
   <body>
     <h1>Live chat</h1>
     <input type="text" id="chatname" placeholder="Chat name">
-    <button onclick="openchat()">
+    <button onclick="openchat()">Start chat</button>
   </body>
   <script>
     openchat(){
@@ -890,11 +890,10 @@ const chat = `<!DOCTYPE html>
     </style>
   </head>
   <body>
-    <h1>Welcome to QWERTY gaming</h1>
-		<a href="/chat-home.htm">
-      <div>
-		    Live chat
-	    </div>
-	  </a>
+    <h1>Live chat</h1>
+		<div id="chat-messages"></div>
+		<form method="post">
+			<input type="text" placeholder="Your messsage"
+		</form>
   </body>
 </html>`
