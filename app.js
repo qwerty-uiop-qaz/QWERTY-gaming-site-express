@@ -12,6 +12,8 @@ app.get("/chat-home.htm", (req, res) => res.type('html').send(chathome));
 
 app.get("/chat/*.htm", (req, res) => res.type('html').send(chat));
 
+app.post("/chat/*.htm", (req, res) => {res.type('html').send(chat); console.log(req.body);});
+
 app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
 app.post("/login-submit", (req, res) => {console.log(req.body); res.type("html").send(home);});
@@ -893,7 +895,8 @@ const chat = `<!DOCTYPE html>
     <h1>Live chat</h1>
 		<div id="chat-messages"></div>
 		<form method="post">
-			<input type="text" placeholder="Your messsage"
+			<input type="text" placeholder="Your messsage">
+   		<input type="submit" content="send">
 		</form>
   </body>
 </html>`
