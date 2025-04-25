@@ -16,7 +16,7 @@ app.get("/chat/*.htm", (req, res) => res.type('html').send(chat));
 
 app.get("/chat/*/messages.txt", (req, res) => {res.type('txt').send(chatdata.toJSON()); console.log(req.body); console.log(chatdata.toJSON());});
 
-app.post("/chat/*.htm", (req, res) => {res.type('html').send(chat); console.log(req.body); chatdata += req; console.log(chatdata.toJSON();});
+app.post("/chat/*.htm", (req, res) => {res.type('html').send(chat); console.log(req.body); chatdata += req; console.log(chatdata.toJSON());});
 
 app.post("/join-submit", (req, res) => {console.log(req.body); res.type("html").send(login);});
 
